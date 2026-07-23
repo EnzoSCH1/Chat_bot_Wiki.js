@@ -208,40 +208,6 @@ Ctrl + F5
 ```bash
 sudo docker logs wiki-chatbot-flask --tail 100
 ```
-
----
-
-# Migration to Another Server
-
-1. Copy:
-
-```
-wiki-chatbot-docker-migration.tar.gz
-```
-
-to the new server.
-
-2. Extract:
-
-```bash
-tar -xzvf wiki-chatbot-docker-migration.tar.gz
-```
-
-3. Update `.env`:
-
-- New server tokens
-- New URLs
-
-4. Update `widget.html`:
-
-- New server IP
-
-5. Start:
-
-```bash
-sudo docker compose up -d
-```
-
 ---
 
 # Security Notes
