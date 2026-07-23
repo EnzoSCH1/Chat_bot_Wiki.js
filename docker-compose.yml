@@ -1,0 +1,19 @@
+version: '3.8'
+
+services:
+  wiki-chatbot:
+    build: .
+    container_name: wiki-chatbot-flask
+    restart: unless-stopped
+    ports:
+      - "5001:5001"
+    # Utilise le réseau de l'hôte pour accéder à GitLab
+    extra_hosts:
+      - "gitlab.exemple.com:10.155.155.155"
+    environment:
+      - GIT_SSL_NO_VERIFY=true
+    volumes:
+      - git-cache:/tmp/git-cache
+
+volumes:
+  git-cache:
