@@ -4,8 +4,12 @@
 
 AI-powered chatbot for **Wiki.js** - Technical documentation from **GitLab** with **Ollama AI responses**.
 
+### Interface WEB
 ![interface_web](interface_web_wiki_chatbot.png)
-![widget_wiki](widget_wiki.png)
+### Widget in WIKI
+<p align=center>
+<img src="widget_wiki.png">
+</p>
 ---
 
 ##  Quick Start
