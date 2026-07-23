@@ -47,7 +47,7 @@ sudo docker compose restart
 sudo docker compose down
 ```
 
-## Rebuild (after code changes)
+## Rebuild (after code changes or new doc)
 
 ```bash
 sudo docker compose down
